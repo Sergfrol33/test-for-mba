@@ -1,0 +1,18 @@
+@import "fonts/index";
+@import "style/reset";
+@import "style/variables";
+
+body{
+  font-family: "Styrene A Web",sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.container{
+  max-width: 1435px;
+  margin: 0 auto;
+  padding: 0 16px;
+  @media screen and (min-width: $tablet){
+    padding: 0 36px;
+  }
+}

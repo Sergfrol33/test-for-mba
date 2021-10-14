@@ -1,0 +1,18 @@
+@mixin flex($direction:row,$wrap:nowrap){
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+@mixin marker($left,$top){
+  &::before {
+    content: '';
+    position: absolute;
+    left: $left;
+    top: $top;
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: var(--red);
+    border-radius: 50%;
+  }
+}
