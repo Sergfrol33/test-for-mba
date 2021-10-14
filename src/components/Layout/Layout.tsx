@@ -1,5 +1,6 @@
 import React, {FC, ReactNode} from 'react';
 import classes from './layout.module.scss'
+import cn from "classnames";
 
 const Layout: FC<ReactNode> = (props) => {
     return (
@@ -21,13 +22,14 @@ const Layout: FC<ReactNode> = (props) => {
                                 <p>кейс-методы, эссе</p>
                             </div>
                         </div>
-                        <div className={classes.block + ' ' + classes.blockPadding}>
+                        <div className={cn(classes.block, classes.blockPadding)}>
                             <div className={classes.blockTitle}>
                                 Итоговая аттестация
                             </div>
                             <ul className={classes.list}>
                                 <li className={classes.blockItem}>
-                                    Бизнес-проектирование (подготовка итоговой аттестационной работы, консультирование по бизнес-проектированию)
+                                    Бизнес-проектирование (подготовка итоговой аттестационной работы, консультирование
+                                    по бизнес-проектированию)
                                 </li>
                                 <li className={classes.blockItem}>Защита итоговой аттестационной работы</li>
                             </ul>
