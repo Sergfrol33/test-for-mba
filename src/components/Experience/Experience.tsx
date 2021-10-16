@@ -17,7 +17,7 @@ const Experience: FC<Props> = (props) => {
     const tablet = useMediaQuery('(min-width: 768px)')
     const handleClick = (e: MouseEvent<HTMLDivElement>) => {
         setTab(e.currentTarget.title)
-        if (tab) setTab('')
+        if (tab === e.currentTarget.title) setTab('')
 
 
     }
