@@ -18,8 +18,6 @@ const Experience: FC<Props> = (props) => {
     const handleClick = (e: MouseEvent<HTMLDivElement>) => {
         setTab(e.currentTarget.title)
         if (tab === e.currentTarget.title) setTab('')
-
-
     }
 
     useEffect(() => {

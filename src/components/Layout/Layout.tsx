@@ -4,7 +4,7 @@ import cn from "classnames";
 
 const Layout: FC<ReactNode> = (props) => {
     return (
-        <article className={classes.article}>
+        <div className={classes.article}>
             <header className={classes.header}>
                 <h3>Специализированные дисциплины</h3>
             </header>
@@ -37,7 +37,7 @@ const Layout: FC<ReactNode> = (props) => {
                     </div>
                 </div>
             </footer>
-        </article>
+        </div>
     );
 };
 
